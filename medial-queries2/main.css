@@ -12,7 +12,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   min-height: 100vh;
-  /* justify-content: space-evenly; */
+  justify-content: center;
 }                  
 
 .container > * {
@@ -35,13 +35,12 @@ body {
 
 @media (min-width: 600px) {
   .container {
-    flex: 100%;
     flex-direction: row;
     flex-wrap: wrap;
   }
 
   .f {
-    flex-basis: 50%;
+    flex-basis: 40%;
   }
   
 }

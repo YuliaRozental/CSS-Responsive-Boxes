@@ -1,3 +1,43 @@
-body {
-  background: peachpuff;
+body { 
+  background-color: lightgoldenrodyellow;
+  margin: 0;
+  text-align: center;
+}
+           
+* {
+  border: 1px solid teal;
+}                  
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  justify-content: space-between;
+}                  
+
+.container > * {
+  padding: 2rem;
+  text-align: center;
+}
+
+.a,
+.h {
+  flex: 1 100%;
+}
+.b, .c, .d, .e, .f, .g {
+  flex: 1;
+}
+
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .h {
+    flex-basis: 50%;
+    flex-direction: column;
+  }
+  
 }
